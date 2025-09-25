@@ -1,9 +1,10 @@
 <nav aria-label="Main navigation">
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <ul>
     <li{% if page.url == "/" or page.url == "/index.html" %} class="active"{% endif %}>
       <a href="{{ "/" | relative_url }}">Home</a>
     </li>
-    <li{% if page.url == "/about.markdown" or page.url == "/about.html" or page.url == "/about/" %} class="active"{% endif %}>
+    <li{% if page.url == "/about.md" or page.url == "/about.html" or page.url == "/about/" %} class="active"{% endif %}>
       <a href="{{ "/about.html" | relative_url }}">About</a>
     </li>
     <li{% if page.url == "/training.html" %} class="active"{% endif %}>
@@ -28,5 +29,4 @@
       <a href="{{ "/elix_ire_funded.html" | relative_url }}">Funded Projects</a>
     </li>
   </ul>
-  <a href="#main-content" class="skip-link">Skip to content</a>
 </nav>
