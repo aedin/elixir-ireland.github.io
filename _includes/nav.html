@@ -1,0 +1,34 @@
+<label
+  class="show-nav"
+  for="nav-checkbox"
+  title="Show main menu"
+></label>
+<input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
+<nav id="main-nav">
+  <ul class="floated-inline">
+    <li{% if page.url == '/' %} class="active"{% endif %}>
+      <a href="{{ '/' | relative_url }}">Home</a>
+    </li>
+    <li{% if page.url contains 'training' %} class="active"{% endif %}>
+      <a href="{{ '/training.html' | relative_url }}">Training</a>
+    </li>
+    <li{% if page.url contains 'databases' %} class="active"{% endif %}>
+      <a href="{{ '/databases.html' | relative_url }}">Databases</a>
+    </li>
+    <li{% if page.url contains 'software' %} class="active"{% endif %}>
+      <a href="{{ '/software.html' | relative_url }}">Software</a>
+    </li>
+    <li{% if page.url contains 'platforms' %} class="active"{% endif %}>
+      <a href="{{ '/platforms.html' | relative_url }}">Platforms</a>
+    </li>
+    <li{% if page.url contains 'events' %} class="active"{% endif %}>
+      <a href="{{ '/events.html' | relative_url }}">Events</a>
+    </li>
+    <li{% if page.url contains 'news' %} class="active"{% endif %}>
+      <a href="{{ '/news.html' | relative_url }}">News</a>
+    </li>
+    <li{% if page.url contains 'elix_ire_funded' %} class="active"{% endif %}>
+      <a href="{{ '/elix_ire_funded.html' | relative_url }}">ELIXIR Ireland Funded Projects</a>
+    </li>
+  </ul>
+</nav>
