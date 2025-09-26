@@ -4,9 +4,6 @@
     <li{% if page.url == "/" or page.url == "/index.html" %} class="active"{% endif %}>
       <a href="{{ "/" | relative_url }}">Home</a>
     </li>
-    <li{% if page.url == "/about.md" or page.url == "/about.html" or page.url == "/about/" %} class="active"{% endif %}>
-      <a href="{{ "/about.html" | relative_url }}">About</a>
-    </li>
     <li{% if page.url == "/training.html" %} class="active"{% endif %}>
       <a href="{{ "/training.html" | relative_url }}">Training</a>
     </li>
